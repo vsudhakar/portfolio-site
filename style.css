@@ -36,9 +36,9 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #69F7BE;
-  --color-text-main: #000000;
-  --color-primary: #FFFF00;
+  --color-bg: #e7eaf6;
+  --color-text-main: #38598b;
+  --color-primary: #a2a8d3;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
@@ -151,7 +151,7 @@ body {
 
 /* Very light scaling for our illustration */
 .title {
-  color: #2800FF;
+  color: #38598b;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
@@ -167,8 +167,8 @@ body {
   margin-top: var(--image-margin);
 }
 
-/* Instructions */
-.instructions {
+/* Description Box */
+.description {
   margin: 1rem auto 0;
 }
 
@@ -187,7 +187,7 @@ input {
 
 /* Subheading */
 h2 {
-  color: #2800FF;
+  color: #113f67;
 }
 
 /* Interactive image */
@@ -212,4 +212,26 @@ h2 {
 }
 .fileopener:hover {
   border-bottom:3px solid var(--color-secondary);
+}
+
+/* Panels */
+.panel {
+  max-width: 80%;
+  text-align: center;
+}
+
+.panel-text {
+  text-align: start;
+}
+
+.headline {
+  flex: 1;
+  max-width: 80%;
+  text-align: center;
+}
+
+.headline-text {
+  text-align: start;
+  font-weight: bold;
+  color: var(--color-text-main);
 }
